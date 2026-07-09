@@ -12,14 +12,12 @@ public class Spawner : MonoBehaviour
 
 	[SerializeField] Enemy _enemyAsset;
 	[SerializeField] List<Enemy> _enemyPool;
+	[SerializeField] Transform _leftSpawner;
+	[SerializeField] Transform _rightSpawner;
 
-	bool _isRightSide;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-		_isRightSide = gameObject.name != "Left";
-		if (_isRightSide)
-			transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 180, -transform.localEulerAngles.z);
 		for(int i = 0; i < _maxEnemyCount; i++)
 		{
 			Enemy obj = Instantiate(_enemyAsset.gameObject).GetComponent<Enemy>();
@@ -31,11 +29,23 @@ public class Spawner : MonoBehaviour
 
 	void SpawnEnemy()
 	{
+		
 		if (_curEnemyCount == _maxEnemyCount)
 			return ;
 		_spawnedEnemyCount++;
 		int cur = _spawnedEnemyCount % _maxEnemyCount;
+		if(Random.Range(0, 2) == 1)
+		{
+			_enemyPool[cur].transform.position = _leftSpawner.position;
+			_enemyPool[cur].transform.rotation = _leftSpawner.rotation;
+		}
+		else
+		{
+			_enemyPool[cur].transform.position = _rightSpawner.position;
+			_enemyPool[cur].transform.rotation = _rightSpawner.rotation;
+		}
 		_enemyPool[cur].gameObject.SetActive(true);
+		
 		_enemyPool[cur].Spawn();
 	}
 	public void OnEnemyDeath()
