@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 4c9cff47b04e59049aeeecf04c05d929
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7541361567588518686
+    second: gorila_heavy_attack-Sheet-Sheet_0
+  - first:
+      213: -7172350892102540853
+    second: gorila_heavy_attack-Sheet-Sheet_1
+  - first:
+      213: 6394673274837922608
+    second: gorila_heavy_attack-Sheet-Sheet_2
+  - first:
+      213: 1534084627057649169
+    second: gorila_heavy_attack-Sheet-Sheet_3
+  - first:
+      213: 8663563712330930122
+    second: gorila_heavy_attack-Sheet-Sheet_4
+  - first:
+      213: 5176508801277624341
+    second: gorila_heavy_attack-Sheet-Sheet_5
+  - first:
+      213: -5248108690950335739
+    second: gorila_heavy_attack-Sheet-Sheet_6
+  - first:
+      213: -8931776466658639700
+    second: gorila_heavy_attack-Sheet-Sheet_7
+  - first:
+      213: 5983115789615228560
+    second: gorila_heavy_attack-Sheet-Sheet_8
+  - first:
+      213: 1947788707166275460
+    second: gorila_heavy_attack-Sheet-Sheet_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gorila_heavy_attack-Sheet-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 5
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b85eec36c48a860800000000000000
+      internalID: 7541361567588518686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_heavy_attack-Sheet-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 5
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1a5c74dd0b67c90800000000000000
+      internalID: -7172350892102540853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_heavy_attack-Sheet-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 5
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033f56986717eb850800000000000000
+      internalID: 6394673274837922608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_heavy_attack-Sheet-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 5
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116a82327d92a4510800000000000000
+      internalID: 1534084627057649169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_heavy_attack-Sheet-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 5
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7137a7b492b3870800000000000000
+      internalID: 8663563712330930122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_heavy_attack-Sheet-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 5
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51006d41457a6d740800000000000000
+      internalID: 5176508801277624341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_heavy_attack-Sheet-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 5
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503d34583f8fa27b0800000000000000
+      internalID: -5248108690950335739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_heavy_attack-Sheet-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 5
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca04e9b40a4fb0480800000000000000
+      internalID: -8931776466658639700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_heavy_attack-Sheet-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 5
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096eb0a5c1c480350800000000000000
+      internalID: 5983115789615228560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_heavy_attack-Sheet-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 5
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487c924628fe70b10800000000000000
+      internalID: 1947788707166275460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gorila_heavy_attack-Sheet-Sheet_0: 7541361567588518686
+      gorila_heavy_attack-Sheet-Sheet_1: -7172350892102540853
+      gorila_heavy_attack-Sheet-Sheet_2: 6394673274837922608
+      gorila_heavy_attack-Sheet-Sheet_3: 1534084627057649169
+      gorila_heavy_attack-Sheet-Sheet_4: 8663563712330930122
+      gorila_heavy_attack-Sheet-Sheet_5: 5176508801277624341
+      gorila_heavy_attack-Sheet-Sheet_6: -5248108690950335739
+      gorila_heavy_attack-Sheet-Sheet_7: -8931776466658639700
+      gorila_heavy_attack-Sheet-Sheet_8: 5983115789615228560
+      gorila_heavy_attack-Sheet-Sheet_9: 1947788707166275460
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

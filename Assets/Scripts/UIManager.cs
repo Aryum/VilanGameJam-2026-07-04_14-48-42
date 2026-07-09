@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
 	[SerializeField] int _scoreValue;
 	[SerializeField]float _currentHp;
 	[SerializeField]float _totalHp;
-
+	
 	void Start()
 	{
 		Instance = this;
