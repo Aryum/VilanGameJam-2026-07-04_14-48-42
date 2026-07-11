@@ -15,5 +15,8 @@ public class SettingsSO : ScriptableObject
 	public Stats EnemyShield;
 	public Stats EnemyBase;
 	public float EnemyRange;
+	public float EnemyKnockedTime;
+	public Vector2 EnemyKnockSpeed;
+
 
 }

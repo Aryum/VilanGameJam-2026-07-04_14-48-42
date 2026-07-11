@@ -12,3 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b471c63df8f7247861548c85cd06bf, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: Assembly-CSharp::SettingsSO
+  Player:
+    Speed: 4
+    Damage: 0
+    Health: 0
+  EnemyShield:
+    Speed: 0
+    Damage: 0
+    Health: 0
+  EnemyBase:
+    Speed: 0
+    Damage: 0
+    Health: 0
+  EnemyRange: 0

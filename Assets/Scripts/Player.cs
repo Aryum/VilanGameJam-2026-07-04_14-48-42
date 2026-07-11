@@ -12,12 +12,31 @@ public class Player : MonoBehaviour
 	bool _isWalking;
 
 	Animator _anim;
+	[SerializeField] AttackBox _light;
+	[SerializeField] AttackBox _heavy;
 
-	public void FinishAttack()
+	public void CallHeavy()
+	{
+		_heavy.Attack();
+	}
+	public void EndHeavy()
 	{
 		_isAttacking = false;
+
+		_heavy.Finish();
 		_anim.SetBool("IsHeavy", false);
+
+	}
+	public void CallLight()
+	{
+		_light.Attack();
+	}
+	public void EndLight()
+	{
+		_isAttacking = false;
+		_light.Finish();
 		_anim.SetBool("IsLight", false);
+
 	}
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
