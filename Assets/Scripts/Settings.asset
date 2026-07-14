@@ -17,11 +17,13 @@ MonoBehaviour:
     Damage: 0
     Health: 0
   EnemyShield:
-    Speed: 0
+    Speed: 50
     Damage: 0
     Health: 0
   EnemyBase:
-    Speed: 0
+    Speed: 3
     Damage: 0
-    Health: 0
-  EnemyRange: 0
+    Health: 50
+  EnemyRange: 3
+  EnemyKnockedTime: 1
+  EnemyKnockSpeed: {x: 2, y: 10}

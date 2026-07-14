@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.Burst.Intrinsics;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -7,12 +9,16 @@ public class Enemy : MonoBehaviour
 	public bool IsKnockedback { private set; get; }
 	public bool IsAttacking { private set; get; }
 	[SerializeField] bool _shield;
+	[SerializeField] SpriteRenderer _sprite;
+
 	float _knockedTime;
 
 	float _hitTime;
 
 	Stats _stat;
 
+	float _minY;
+	Vector2 _curSpeed;
 	void Start()
 	{
 	 	_stat = _shield ? Ref.I.Settings.EnemyShield : Ref.I.Settings.EnemyBase;
@@ -20,6 +26,8 @@ public class Enemy : MonoBehaviour
 
 		Debug.Log("Debug life");
 		_healthCur = 10000;
+
+		_minY = transform.position.y;
 	}
 	
 	
@@ -37,9 +45,25 @@ public class Enemy : MonoBehaviour
 	{
 		
 	}
+
+	IEnumerator SpriteDamage()
+	{
+		WaitForSeconds w = new WaitForSeconds(Ref.I.Settings.SpriteFlash_Delay);
+		bool isAlpha = true;
+		Color transparent =  new Color(_sprite.color.r, _sprite.color.g, _sprite.color.b, _sprite.color.a / 2);
+		Color color = _sprite.color;
+
+		while(IsKnockedback) 
+		{
+			_sprite.color = isAlpha ? transparent : color;
+			isAlpha = !isAlpha;
+			yield return w;
+		}
+		_sprite.color = color;
+	}
+
 	public void TakeDamage(int damage, float time, bool knockBack)
 	{
-		Debug.Log("Got attacked");
 		if (_hitTime == time)
 			return ;
 		_hitTime = time;
@@ -50,6 +74,9 @@ public class Enemy : MonoBehaviour
 		{
 			_knockedTime = time;
 			IsKnockedback = true;
+			StartCoroutine(SpriteDamage());
+			_curSpeed.y = Ref.I.Settings.EnemyKnockedSpeed;
+			_curSpeed.x = Ref.I.Settings.EnemyKnockedSpeed;
 
 		}
 	}
@@ -60,8 +87,7 @@ public class Enemy : MonoBehaviour
 		IsAttacking = Vector3.Magnitude(dir) < Ref.I.Settings.EnemyRange;
 		dir = dir.normalized;
 		
-		if (Time.timeSinceLevelLoad > _knockedTime + Ref.I.Settings.EnemyKnockedTime)
-			IsKnockedback = false;
+		
 		if (!IsKnockedback )
 		{
 			if (!IsAttacking)
@@ -69,20 +95,17 @@ public class Enemy : MonoBehaviour
 		}
 		else
 		{
-			Vector2 speed = Ref.I.Settings.EnemyKnockSpeed;
-			transform.position -= Time.deltaTime * speed.x * _stat.Speed * dir;
-			float curTime = Time.timeSinceLevelLoad - _knockedTime;
-			float percent = curTime / Ref.I.Settings.EnemyKnockedTime;
-			if (percent < 0.5f)
+			if (transform.position.y >= _minY)
 			{
-				transform.position += Time.deltaTime  * (0.5f - percent) * speed.y * Vector3.up;
-				Debug.Log("Going up");
+				float acceration = -Ref.I.Settings.EnemyKnockedAcc;
+				_curSpeed.y += acceration * Time.deltaTime;
+				_curSpeed.x += acceration * Time.deltaTime * 0.5f;
+
+				transform.position += _curSpeed.y * Time.deltaTime * Vector3.up + _curSpeed.x * Time.deltaTime * -dir;
 			}
 			else
-			{
-				transform.position -= Time.deltaTime * (1f - percent) *  speed.y * Vector3.up;
-				Debug.Log("Going down");
-			}
+				IsKnockedback = false;
+			
 		}
 	}
 }
